@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Students</string>
+    <string name="student">Student_01</string>
+    <string name="studentprofile">Students Profile</string>
+    <string name="firstname">FirstName :</string>
+    <string name="last_name">Last Name :</string>
+    <string name="school">School</string>
+    <string name="b_day">B\'Day</string>
+    <string name="male">Male</string>
+    <string name="add">ADD</string>
+    <string name="exams">Exams :</string>
+    <string name="batch">Batch</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="register">Register</string>
+    <string name="remove">Remove</string>
+    <string name="student_01">Student 01</string>
+    <string name="student_02">Student 02</string>
+    <string name="student_03">Student 03</string>
+
+    <string-array name="Batches" >
+
+        <item>Batch 01</item>
+        <item>Batch 02</item>
+        <item>Batch 03</item>
+        <item>Batch 04</item>
+        <item>Batch 05</item>
+
+
+
+
+    </string-array>
+</resources>
