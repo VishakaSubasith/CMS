@@ -18,6 +18,18 @@
     <string name="student_02">Student 02</string>
     <string name="student_03">Student 03</string>
 
+
+    <string name="lable1">Expense Name</string>
+    <string name="lable2">Expense Category</string>
+    <string name="lable3">Amount</string>
+    <string name="lable4">Date</string>
+    <string name="to">to</string>
+    <string name="expenses">Expenses</string>
+    <string name="expense_management">Expense Management</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="expenses_report">Expenses Report</string>
+    <string name="update_expense">Update Expense</string>
+
     <string-array name="Batches" >
 
         <item>Batch 01</item>
@@ -25,6 +37,9 @@
         <item>Batch 03</item>
         <item>Batch 04</item>
         <item>Batch 05</item>
+
+
+
 
 
 
