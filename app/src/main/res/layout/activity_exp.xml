@@ -1,71 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".Exp">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="121dp"
-            android:layout_height="126dp"
-            android:layout_marginTop="68dp"
-            android:background="#006B3434"
-            android:contentDescription="@st"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10"
-            app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp"
-            android:layout_marginStart="16dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="121dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="#006B3434"
+        android:contentDescription="@st"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="121dp"
         android:layout_height="133dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/ic_content_paste_black_24dp" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_width="202dp"
+        android:layout_height="46dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="8dp"
         android:background="#8ADCFD"
         android:text="Expense Report"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        tools:layout_editor_absoluteY="341dp" />
+        tools:layout_editor_absoluteY="266dp" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="201dp"
-        android:layout_height="57dp"
+        android:layout_width="211dp"
+        android:layout_height="55dp"
         android:layout_marginStart="44dp"
         android:background="#8ADCFD"
         android:text="Manage Expense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        tools:layout_editor_absoluteY="160dp" />
+        tools:layout_editor_absoluteY="138dp" />
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="245dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="16dp"
-            android:autoText="false"
-            android:text="@string/expense_management"
-            android:textColor="#000000"
-            android:textSize="14dp"
-            app:autoSizeTextType="uniform"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="245dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:autoText="false"
+        android:text="@string/expense_management"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 

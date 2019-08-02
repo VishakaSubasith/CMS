@@ -6,4 +6,16 @@
     <color name="st_display">#8BE2FD</color>
     <color name="shadow">#AEB7BA</color>
     <color name="searchbar">#E8E8E8</color>
+
+    <color name="lable1">#8FD8F8</color>
+    <color name="data_name">#8FD8F8</color>
+    <color name="lable2">#8FD8F8</color>
+    <color name="lable3">#8FD8F8</color>
+    <color name="lable4">#8FD8F8</color>
+    <color name="to">#8FD8F8</color>
+    <color name="expenses">#8FD8F8</color>
+    <color name="expense_management">#8FD8F8</color>
+    <color name="add_expense">#8FD8F8</color>
+    <color name="expenses_report">#8FD8F8</color>
+    <color name="update_expense">#8FD8F8</color>
 </resources>
