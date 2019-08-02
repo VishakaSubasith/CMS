@@ -39,11 +39,28 @@
         <item>Batch 04</item>
         <item>Batch 05</item>
 
-
-
-
-
-
-
     </string-array>
+
+
+
+    <string name="title_activity_retrive_data">retriveData</string>
+    <string name="subject">Subject:</string>
+    <string name="date">Date:</string>
+    <string name="batchcha">Batch:</string>
+    <string name="duration">Duration:</string>
+
+    <string name="venue">Venue:</string>
+    <string name="notice">Notice:</string>
+    <string name="tocha">To</string>
+    <string name="addtask">AddTask</string>
+    <string name="lable5">Type:</string>
+    <string name ="lable6">Task1</string>
+    <string name ="lable7">Task2</string>
+    <string name ="lable8">Task3</string>
+    <string-array name="numbers">
+        <item>Lecture</item>
+        <item>Exam</item>
+        <item>Others</item>
+    </string-array>
+
 </resources>
