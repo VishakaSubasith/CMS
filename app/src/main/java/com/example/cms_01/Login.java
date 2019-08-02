@@ -35,7 +35,7 @@ public class Login extends AppCompatActivity {
     public void validate(String username, String password){
 
         if((username.equals("admin")) && (password.equals("1234"))){
-            Intent intent = new Intent(Login.this,Home.class);
+            Intent intent = new Intent(Login.this,MainActivity.class);
             startActivity(intent);
             Toast.makeText(getApplicationContext(),"Login Pass!!",Toast.LENGTH_LONG).show();
         }

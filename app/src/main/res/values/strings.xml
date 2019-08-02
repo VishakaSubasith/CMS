@@ -35,6 +35,8 @@
     <string name="save">SAVE</string>
     <string name="textView7">Class Name</string>
     <string name="sub">Subject</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
     <string name="year">Class Year</string>
     <string name="Location">Location</string>
     <string name="days">Days</string>

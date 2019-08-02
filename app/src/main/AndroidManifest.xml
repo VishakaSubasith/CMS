@@ -10,8 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".register_students"></activity>
+        <activity android:name=".update_delete"></activity>
         <activity android:name=".Student_Profile" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Exp"></activity>
+        <activity android:name=".ADD_CLASS"></activity>
+        <activity android:name=".Classhome"></activity>
+        <activity android:name=".AddExp"></activity>
+        <activity android:name=".ExpMng"></activity>
+        <activity android:name=".ExpReport"></activity>
+        <activity android:name=".ExpUpdate"></activity>
+        <activity android:name=".Login"></activity>
+        <activity android:name=".test"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
