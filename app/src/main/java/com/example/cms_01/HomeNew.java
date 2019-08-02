@@ -29,13 +29,17 @@ public class HomeNew extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     ImageView image;
     ImageView image2;
+    ImageView image3; //anuj's Link Files
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_new);
         Toolbar toolbar = findViewById(R.id.toolbar);
+
         image=findViewById(R.id.imageView17);
         image=findViewById(R.id.imageView15);
+        image3 = (ImageView) findViewById(R.id.imageView13);
+
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +49,16 @@ public class HomeNew extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
+
+        image3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                OpenExp();
+            }
+        });
+
+
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -57,6 +71,13 @@ public class HomeNew extends AppCompatActivity
         Intent myintent = new Intent(HomeNew.this, Classhome.class);
         startActivity(myintent);
 
+
+    }
+//anuj Exp files
+
+    public void OpenExp(){
+        Intent intent1 = new Intent(this,Exp.class);
+        startActivity(intent1);
 
     }
 

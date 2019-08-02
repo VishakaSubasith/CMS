@@ -13,30 +13,27 @@
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:background="@color/searchbar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
 
         android:id="@+id/textView18"
-        android:layout_width="398dp"
-        android:layout_height="118dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
 
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimaryDark"
-        android:text="@string/data_name"
         android:paddingTop="25dp"
+        android:text="@string/data_name"
         android:textSize="35sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,20 +41,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.002" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="93dp"
-        android:layout_height="66dp"
+        android:layout_width="72dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="TODO"
+        android:foreground="@drawable/ic_add_circle_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
+
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         tools:layout_conversion_wrapHeight="223"
         tools:layout_conversion_wrapWidth="294" />
 
@@ -65,32 +63,32 @@
         android:id="@+id/textView11"
         android:layout_width="189dp"
         android:layout_height="34dp"
+        android:layout_marginStart="108dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="108dp"
         android:text="@string/expenses"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="14sp"
         app:autoSizeTextType="uniform"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/expUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="304dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="12dp"
         android:text="Update"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
 
     <Button
         android:id="@+id/expDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/expUpdate"
+        app:layout_constraintStart_toEndOf="@+id/expUpdate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

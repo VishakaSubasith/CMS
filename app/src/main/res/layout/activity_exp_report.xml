@@ -8,58 +8,87 @@
 
     <EditText
         android:id="@+id/editText9"
-        android:layout_width="wrap_content"
+        android:layout_width="213dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <EditText
         android:id="@+id/editText10"
-        android:layout_width="wrap_content"
+        android:layout_width="213dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText9" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="31dp"
         android:layout_height="29dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="172dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/to"
-        android:textSize="20dp"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editText9"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="384dp"
-        android:layout_marginEnd="136dp"
-        android:text="Generate"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="160dp"
         android:background="#8ADCFD"
+        android:text="Generate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="112dp"
-        android:text="@string/expenses_report"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="144dp"
+        android:text="@string/add_expense"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/lable4"
+        android:textSize="25dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
+        app:layout_constraintEnd_toStartOf="@+id/editText9" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/lable4"
+
+        android:textSize="25dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText10"
+        app:layout_constraintEnd_toStartOf="@+id/editText10" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
