@@ -12,7 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="142dp"
         android:layout_height="32dp"
-        android:layout_marginStart="76dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -27,11 +27,11 @@
         android:textStyle="bold"
         app:autoSizeTextType="none"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96" />
+        app:layout_constraintVertical_bias="0.942" />
 
 
     <ProgressBar
@@ -63,27 +63,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.015" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="73dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="sendData"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.975"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.987"
-        app:srcCompat="@drawable/ic_add" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle"
-        android:layout_width="395dp"
-        android:layout_height="534dp"
+        android:layout_width="396dp"
+        android:layout_height="394dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="88dp"
         android:layout_marginBottom="8dp"
@@ -107,6 +91,20 @@
         app:layout_constraintStart_toEndOf="@+id/searchView2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.027"
-        app:srcCompat="@drawable/ic_search_black_24dp" />
+        />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="109dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="456dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="sendData"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

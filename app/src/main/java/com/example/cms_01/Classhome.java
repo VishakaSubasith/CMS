@@ -20,7 +20,7 @@ ProgressBar pgsbar;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classhome);
-         txt=findViewById(R.id.imageView);
+         txt=findViewById(R.id.imageView10);
          pgsbar=findViewById(R.id.progressBar);
 
          recy=findViewById(R.id.recycle);

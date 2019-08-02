@@ -11,6 +11,5 @@
         android:layout_width="32dp"
         android:layout_height="113dp"
         android:layout_weight="1"
-        android:background="@drawable/btn_rounded"
         android:text="Button" />
 </com.google.android.material.circularreveal.CircularRevealLinearLayout>

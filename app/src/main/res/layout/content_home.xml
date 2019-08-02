@@ -11,62 +11,50 @@
     tools:showIn="@layout/app_bar_home">
 
     <ImageView
-        android:id="@+id/myclass"
-        android:layout_width="193dp"
-        android:layout_height="185dp"
-        android:layout_marginStart="8dp"
+        android:id="@+id/imageView10"
+        android:layout_width="185dp"
+        android:layout_height="187dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="12dp"
         android:layout_marginBottom="8dp"
-        android:onClick="sendData"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.632"
-        app:srcCompat="@mipmap/ic_forefround" />
+        app:layout_constraintVertical_bias="0.675"
+        app:srcCompat="@mipmap/ic_class_frog" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="190dp"
-        android:layout_height="186dp"
+        android:id="@+id/imageView11"
+        android:layout_width="185dp"
+        android:layout_height="190dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661"
+        app:srcCompat="@mipmap/ic_expensivness_frog"
+        tools:layout_editor_absoluteX="205dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="183dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637"
-        app:srcCompat="@mipmap/ic_student_forefround" />
+        android:layout_marginBottom="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_timetable_frog" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="194dp"
-        android:layout_height="180dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:id="@+id/imageView14"
+        android:layout_width="184dp"
+        android:layout_height="181dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384"
-        app:srcCompat="@mipmap/ic_timetable_forefround" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="191dp"
-        android:layout_height="184dp"
-        android:layout_marginStart="204dp"
-        android:layout_marginTop="248dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
-        app:srcCompat="@mipmap/ic_expensive_forefround" />
+        app:srcCompat="@mipmap/ic_student_frog" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
