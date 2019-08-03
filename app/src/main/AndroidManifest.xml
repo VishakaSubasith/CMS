@@ -15,8 +15,10 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".register_students" />
         <activity android:name=".TimeTable" ></activity>
+
         <activity android:name=".retrivedata"></activity>
         <activity android:name=".Insert_Activity"></activity>
+        <activity android:name=".UpdateTimetable"></activity>
         <activity android:name=".update_delete"></activity>
         <activity android:name=".Student_Profile" />
         <activity android:name=".Exp" />

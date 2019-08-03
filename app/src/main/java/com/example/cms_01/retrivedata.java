@@ -19,4 +19,10 @@ public class retrivedata extends AppCompatActivity {
         startActivity(intent2);
     }
 
+    public void onupdateDelete(View V){
+
+        Intent intent3=new Intent(retrivedata.this,UpdateTimetable.class);
+        startActivity(intent3);
+    }
+
 }

@@ -77,8 +77,13 @@
     <string name="venue">Venue:</string>
     <string name="notice">Notice:</string>
     <string name="tocha">To</string>
-    <string name="addtask">AddTask</string>
-    <string name="lable5">Type:</string>
+    <string name="addtask">Add Task:</string>
+    <string name="managetask">Manage Shedule</string>
+    <string name="updateshedule">Update Shedule</string>
+    <string name="insertshedule">Insert Details</string>
+    <string name="timetablein">TIME TABLE</string>
+
+    <string name="type">Type:</string>
     <string name="lable6">Task1</string>
     <string name="lable7">Task2</string>
     <string name="lable8">Task3</string>
