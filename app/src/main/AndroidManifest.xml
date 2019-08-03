@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/cmslogoback"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ExpReportTot"></activity>
         <activity
             android:name=".HomeNew"
             android:label="@string/title_activity_home_new"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".register_students" />
-        <activity android:name=".TimeTable" ></activity>
-
-        <activity android:name=".retrivedata"></activity>
-        <activity android:name=".Insert_Activity"></activity>
-        <activity android:name=".UpdateTimetable"></activity>
-        <activity android:name=".update_delete"></activity>
+        <activity android:name=".TimeTable" />
+        <activity android:name=".retrivedata" />
+        <activity android:name=".Insert_Activity" />
+        <activity android:name=".UpdateTimetable" />
+        <activity android:name=".update_delete" />
         <activity android:name=".Student_Profile" />
         <activity android:name=".Exp" />
         <activity android:name=".ADD_CLASS" />

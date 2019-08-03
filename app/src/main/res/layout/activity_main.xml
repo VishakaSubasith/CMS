@@ -41,7 +41,7 @@
         android:onClick="goProfile"
         android:text="@string/student_01"
         android:textAlignment="center"
-        android:textSize="35sp"
+        android:textSize="35dp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

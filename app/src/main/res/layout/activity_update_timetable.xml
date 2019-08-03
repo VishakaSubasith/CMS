@@ -249,8 +249,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="@string/updateshedule"
-        android:textColor="@color/colorAccent"
-        android:textSize="36sp"
+        android:textColor="#131313"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

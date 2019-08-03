@@ -159,7 +159,7 @@
 
     <Button
         android:background="@color/colorPrimaryDark"
-        android:id="@+id/button"
+        android:id="@+id/totalAmo"
         android:layout_width="126dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -259,8 +259,8 @@
         android:layout_height="58dp"
         android:layout_marginTop="16dp"
         android:text="@string/insertshedule"
-        android:textColor="@color/colorAccent"
-        android:textSize="36sp"
+        android:textColor="#131313"
+        android:textSize="28sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="8dp" />
 

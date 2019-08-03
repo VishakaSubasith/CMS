@@ -188,7 +188,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView14" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/totalAmo"
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_marginStart="8dp"

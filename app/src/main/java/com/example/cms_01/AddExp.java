@@ -42,12 +42,7 @@ Button expDelete;
             }
         });
 
-        expDelete.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
 
-                ExpUpdate();
-            }
-        });
 
     }
 
@@ -64,9 +59,5 @@ Button expDelete;
 
     }
 
-    public void ExpDelete(){
-        Intent intent1 = new Intent(this,ExpUpdate.class);
-        startActivity(intent1);
 
-    }
 }
