@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Students</string>
+    <string name="app_name">Class Management System- CMS</string>
     <string name="student">Student_01</string>
     <string name="studentprofile">Students Profile</string>
     <string name="firstname">FirstName :</string>
@@ -35,7 +35,7 @@
     <string name="save">SAVE</string>
     <string name="textView7">Class Name</string>
     <string name="sub">Subject</string>
-    <string name="update">Update</string>
+    <string name="update">Save</string>
     <string name="delete">Delete</string>
     <string name="year">Class Year</string>
     <string name="Location">Location</string>
@@ -86,6 +86,24 @@
         <item>Exam</item>
         <item>Others</item>
     </string-array>
+
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
     <string name="title_activity_home_new">HomeNew</string>
+    <string name="sunday">SUNDAY</string>
+    <string name="saturday">SATURDAY</string>
+    <string name="friday">FRIDAY</string>
+    <string name="thuesday">THUESDAY</string>
+    <string name="wednday">WEDNDAY</string>
+    <string name="tuesday">TUESDAY</string>
+    <string name="monday">MONDAY</string>
+    <string name="classes">Classes</string>
+    <string name="time_tables">Time Tables</string>
+    <string name="button">Button</string>
+    <string name="batch_year">Batch Year</string>
+    <string name="class_name">Class Name</string>
+    <string name="expense_report">Expense Report</string>
+    <string name="manage_expense">Manage Expense</string>
+    <string name="generate">Generate</string>
 
 </resources>

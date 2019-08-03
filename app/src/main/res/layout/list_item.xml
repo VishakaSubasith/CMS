@@ -7,14 +7,15 @@
 
 
     <TextView
+        android:textStyle="italic"
         android:id="@+id/tv1"
         android:layout_width="411dp"
         android:layout_height="125dp"
         android:layout_gravity="left"
         android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
-        android:background="#AB39B6EC"
+        android:background="@color/textbox"
         android:text="Monday"
-        android:textSize="20sp" />
+        android:textSize="35sp" />
 
 </LinearLayout>

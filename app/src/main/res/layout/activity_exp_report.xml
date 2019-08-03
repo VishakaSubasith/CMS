@@ -8,12 +8,13 @@
 
     <EditText
         android:id="@+id/editText9"
-        android:layout_width="213dp"
-        android:layout_height="wrap_content"
+        android:layout_width="216dp"
+        android:layout_height="42dp"
         android:layout_marginStart="8dp"
-
         android:layout_marginTop="52dp"
+
         android:layout_marginEnd="8dp"
+        android:background="@color/textbox"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,12 +22,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <EditText
+
         android:id="@+id/editText10"
-        android:layout_width="213dp"
-        android:layout_height="wrap_content"
+        android:layout_width="216dp"
+        android:layout_height="41dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="124dp"
         android:layout_marginEnd="8dp"
+        android:background="@color/textbox"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,11 +38,11 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="31dp"
-        android:layout_height="29dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="200dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/to"
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/editText10"
@@ -53,8 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="160dp"
-        android:background="#8ADCFD"
-        android:text="Generate"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/generate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText10" />
 
@@ -66,7 +69,7 @@
         android:layout_marginEnd="144dp"
         android:text="@string/add_expense"
         android:textColor="#000000"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -74,21 +77,25 @@
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         android:text="@string/lable4"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
-        app:layout_constraintEnd_toStartOf="@+id/editText9" />
+        app:layout_constraintEnd_toStartOf="@+id/editText9"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/lable4"
 
-        android:textSize="25dp"
+        android:text="@string/lable4"
+        android:textSize="25sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText10"
-        app:layout_constraintEnd_toStartOf="@+id/editText10" />
+        app:layout_constraintEnd_toStartOf="@+id/editText10"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -158,4 +158,17 @@ public class HomeNew extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-}
+
+    public void goStudents(View view){
+
+        Intent intent =new Intent(this,MainActivity.class);
+        startActivity(intent);
+
+        }
+        public void goTimetable(View view){
+        Intent intent =new Intent(this,TimeTable.class);
+        startActivity(intent);
+        }
+
+    }
+

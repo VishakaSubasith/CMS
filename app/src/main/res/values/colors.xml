@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#8FD8F8</color>
-    <color name="colorPrimaryDark">#8FD8F8</color>
+    <color name="colorPrimary">#ff9f1a</color>
+    <color name="colorPrimaryDark">#FF9F1A</color>
     <color name="colorAccent">#D81B60</color>
     <color name="st_display">#8BE2FD</color>
     <color name="shadow">#AEB7BA</color>
@@ -18,6 +18,8 @@
     <color name="add_expense">#8FD8F8</color>
     <color name="expenses_report">#8FD8F8</color>
     <color name="update_expense">#8FD8F8</color>
+    <color name="textbox">#fff1cc</color>
+    <color name="textcolor">#000000</color>
 
 
 
