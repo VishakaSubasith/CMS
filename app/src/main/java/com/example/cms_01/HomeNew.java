@@ -2,6 +2,7 @@ package com.example.cms_01;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -28,6 +29,8 @@ import android.widget.ImageView;
 public class HomeNew extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     ImageView image;
+    ImageView image1;
+
     ImageView image2;
     ImageView image3; //anuj's Link Files
     @Override
@@ -37,7 +40,8 @@ public class HomeNew extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         image=findViewById(R.id.imageView17);
-        image=findViewById(R.id.imageView15);
+        image2=findViewById(R.id.fd);
+        image1=findViewById(R.id.imageView15);
         image3 = (ImageView) findViewById(R.id.imageView13);
 
         setSupportActionBar(toolbar);
@@ -45,8 +49,13 @@ public class HomeNew extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                String theurl = "http://google.com";
+                Uri urlstr = Uri.parse(theurl);
+                Intent urlintent = new Intent();
+                urlintent.setData(urlstr);
+                urlintent.setAction(Intent.ACTION_VIEW);
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG);
+                startActivity(urlintent);
             }
         });
 
@@ -81,10 +90,6 @@ public class HomeNew extends AppCompatActivity
 
     }
 
-    public void sentstudent(){
-        Intent myintent = new Intent(HomeNew.this, MainActivity.class);
-        startActivity(myintent);
-    }
 
     @Override
     public void onBackPressed() {
@@ -151,6 +156,8 @@ public class HomeNew extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
+            Intent intent5 =new Intent(this,update_delete.class);
+            startActivity(intent5);
 
         }
 
@@ -166,8 +173,8 @@ public class HomeNew extends AppCompatActivity
 
         }
         public void goTimetable(View view){
-        Intent intent =new Intent(this,TimeTable.class);
-        startActivity(intent);
+        Intent intent1 =new Intent(HomeNew.this,TimeTable.class);
+        startActivity(intent1);
         }
 
     }

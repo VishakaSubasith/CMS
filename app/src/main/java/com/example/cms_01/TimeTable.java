@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TimeTable extends AppCompatActivity {
 
-  // private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +15,6 @@ public class TimeTable extends AppCompatActivity {
         setContentView(R.layout.activity_timetable);
 
 
-
-       // recyclerView=findViewById(R.id.recycle_view);
-       //clerView.setLayoutManager(layoutManager);
     }
 
     public void send1(View v1){

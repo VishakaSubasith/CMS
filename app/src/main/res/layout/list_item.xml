@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     >
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <TextView
-        android:textStyle="italic"
         android:id="@+id/tv1"
-        android:layout_width="411dp"
-        android:layout_height="125dp"
+        android:layout_width="270dp"
+        android:layout_height="85dp"
         android:layout_gravity="left"
         android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
         android:background="@color/textbox"
         android:text="Monday"
-        android:textSize="35sp" />
+        android:textSize="35sp"
+        android:textStyle="italic" />
 
 </LinearLayout>
+</androidx.core.widget.NestedScrollView>

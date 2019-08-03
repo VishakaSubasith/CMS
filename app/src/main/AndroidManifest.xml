@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/cmslogoback"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/cmslogoback"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -14,7 +14,10 @@
             android:label="@string/title_activity_home_new"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".register_students" />
-        <activity android:name=".update_delete" />
+        <activity android:name=".TimeTable" ></activity>
+        <activity android:name=".retrivedata"></activity>
+        <activity android:name=".Insert_Activity"></activity>
+        <activity android:name=".update_delete"></activity>
         <activity android:name=".Student_Profile" />
         <activity android:name=".Exp" />
         <activity android:name=".ADD_CLASS" />

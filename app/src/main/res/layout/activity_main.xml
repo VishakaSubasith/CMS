@@ -188,6 +188,6 @@
         android:onClick="goRegister"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/adddd" />
+        app:srcCompat="@mipmap/add_student" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

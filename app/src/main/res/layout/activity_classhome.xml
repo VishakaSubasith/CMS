@@ -20,7 +20,7 @@
         android:background="#00F1E789"
         android:bufferType="normal"
         android:text=" New Class"
-        android:textColor="#0B1F8A"
+        android:textColor="#405AE6"
         android:textColorHighlight="@color/colorAccent"
         android:textDirection="firstStrongRtl"
         android:textSize="26sp"
@@ -55,7 +55,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="88dp"
         android:layout_marginBottom="8dp"
-        android:background="#FAFCF9F9"
+        android:background="#4FF3DC94"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -66,8 +66,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle"
-        android:layout_width="396dp"
-        android:layout_height="394dp"
+        android:layout_width="294dp"
+        android:layout_height="327dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="88dp"
         android:layout_marginBottom="8dp"
@@ -86,12 +86,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_search_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/searchView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027"
-        />
+        app:layout_constraintVertical_bias="0.027" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -106,5 +106,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_control_point_black_24dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="89dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FDD14C"
+        android:onClick="update"
+        android:text="@string/edit"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/recycle"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.002" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

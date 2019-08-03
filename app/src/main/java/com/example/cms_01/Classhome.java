@@ -3,6 +3,7 @@ package com.example.cms_01;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class Classhome extends AppCompatActivity {
 ImageView txt;
 ProgressBar pgsbar;
+Button button1;
     RecyclerView recy;
     RecyclerView.Adapter adapter;
     RecyclerView.LayoutManager layoutManager;
@@ -22,6 +24,7 @@ ProgressBar pgsbar;
         setContentView(R.layout.activity_classhome);
          txt=findViewById(R.id.imageView10);
          pgsbar=findViewById(R.id.progressBar);
+         button1=findViewById(R.id.button5);
 
          recy=findViewById(R.id.recycle);
          recy.setHasFixedSize(true);
@@ -36,6 +39,11 @@ ProgressBar pgsbar;
         Intent myintent = new Intent(Classhome.this,ADD_CLASS.class);
         startActivity(myintent);
         pgsbar.setVisibility(v.VISIBLE);
+
+    }
+    public void update(View v){
+        Intent myintent1 = new Intent(Classhome.this,update_delete.class);
+        startActivity(myintent1);
 
     }
 
