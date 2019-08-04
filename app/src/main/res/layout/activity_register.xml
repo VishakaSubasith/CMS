@@ -11,9 +11,9 @@
         android:id="@+id/texView1"
         android:layout_width="wrap_content"
         android:layout_height="21dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
 
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="100dp"
         android:text="Firstname"
         android:textSize="18sp"
         android:textStyle="italic"
