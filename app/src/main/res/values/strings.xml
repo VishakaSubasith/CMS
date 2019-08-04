@@ -39,9 +39,9 @@
 
 
     <string name="save">SAVE</string>
+    <string name="updateExp">UPDATE</string>
     <string name="textView7">Class Name</string>
     <string name="sub">Subject</string>
-    <string name="update">Save</string>
     <string name="delete">Delete</string>
     <string name="year">Class Year</string>
     <string name="Location">Location</string>
@@ -116,5 +116,6 @@
     <string name="expense_report">Expense Report</string>
     <string name="manage_expense">Manage Expense</string>
     <string name="generate">Generate</string>
+    <string name="updateCal">UpdateCal</string>
 
 </resources>
