@@ -132,7 +132,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView15" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/uname"
         android:layout_width="108dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"

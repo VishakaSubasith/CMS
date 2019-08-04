@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/cmslogoback"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ExpReportTot"></activity>
+        <activity android:name=".register"></activity>
+        <activity android:name=".ExpReportTot" />
         <activity
             android:name=".HomeNew"
             android:label="@string/title_activity_home_new"

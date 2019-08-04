@@ -70,7 +70,7 @@
 
     <EditText
         android:background="@color/textbox"
-        android:id="@+id/editText5"
+        android:id="@+id/uname"
         android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginStart="8dp"
