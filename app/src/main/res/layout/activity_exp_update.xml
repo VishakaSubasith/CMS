@@ -30,7 +30,7 @@
         android:layout_below="@+id/datePicker1"
         android:layout_marginBottom="36dp"
         android:background="@color/colorPrimary"
-        android:text="Get Date"
+        android:text="@string/get_date"
         app:layout_constraintBottom_toTopOf="@+id/Update"
         app:layout_constraintStart_toStartOf="parent" />
 

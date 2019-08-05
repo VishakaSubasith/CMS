@@ -29,7 +29,7 @@
             android:layout_marginStart="44dp"
             android:layout_marginTop="12dp"
             android:background="@color/colorPrimary"
-            android:text="Delete"
+            android:text="@string/delete"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText31" />
 
@@ -40,7 +40,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="36dp"
             android:background="@color/colorPrimary"
-            android:text="Update"
+            android:text="@string/update"
             app:layout_constraintBaseline_toBaselineOf="@+id/button16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

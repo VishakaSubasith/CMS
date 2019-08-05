@@ -130,7 +130,7 @@
             android:layout_below="@+id/datePicker1"
             android:layout_marginStart="8dp"
             android:background="@color/colorPrimary"
-            android:text="Get Date"
+            android:text="@string/get_date"
             app:layout_constraintBaseline_toBaselineOf="@+id/editText10"
             app:layout_constraintStart_toEndOf="@+id/editText10" />
 
@@ -141,7 +141,7 @@
             android:layout_below="@+id/datePicker1"
             android:layout_marginStart="8dp"
             android:background="@color/colorPrimary"
-            android:text="Get Date"
+            android:text="@string/get_date"
             app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
             app:layout_constraintStart_toEndOf="@+id/editText9" />
     </androidx.constraintlayout.widget.ConstraintLayout>
