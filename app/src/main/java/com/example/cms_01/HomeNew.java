@@ -24,14 +24,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class HomeNew extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    ImageView image;
-    ImageView image1;
-    ImageView image2;
-    ImageView image3;
+    Button image;
+    Button image1;
+    Button image2;
+    Button image3;
                             //anuj's Link Files
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,33 +40,12 @@ public class HomeNew extends AppCompatActivity
         setContentView(R.layout.activity_home_new);
         Toolbar toolbar = findViewById(R.id.toolbar);
 
-        image=findViewById(R.id.imageView17);
-        image2=findViewById(R.id.fd);
-        image1=findViewById(R.id.imageView15);
-        image3 = (ImageView) findViewById(R.id.imageView13);
+        image=findViewById(R.id.button100);
+        image2=findViewById(R.id.button200);
+        image1=findViewById(R.id.button300);
+        image3 = (Button) findViewById(R.id.button400);
 
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                String theurl = "http://google.com";
-                Uri urlstr = Uri.parse(theurl);
-                Intent urlintent = new Intent();
-                urlintent.setData(urlstr);
-                urlintent.setAction(Intent.ACTION_VIEW);
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG);
-                startActivity(urlintent);
-            }
-        });
-
-        image3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-
-                OpenExp();
-            }
-        });
 
 
 
@@ -83,9 +63,20 @@ public class HomeNew extends AppCompatActivity
 
 
     }
+    public void goStudent(View v){
+
+        Intent intent =new Intent(this,MainActivity.class);
+        startActivity(intent);
+
+    }
+    public void goTimetabl(View v){
+        Intent intent1 =new Intent(HomeNew.this,TimeTable.class);
+        startActivity(intent1);
+    }
+
 //anuj Exp files
 
-    public void OpenExp(){
+    public void OpenExp(View v){
         Intent intent1 = new Intent(this,Exp.class);
         startActivity(intent1);
 
@@ -167,16 +158,6 @@ public class HomeNew extends AppCompatActivity
         return true;
     }
 
-    public void goStudents(View view){
-
-        Intent intent =new Intent(this,MainActivity.class);
-        startActivity(intent);
-
-        }
-        public void goTimetable(View view){
-        Intent intent1 =new Intent(HomeNew.this,TimeTable.class);
-        startActivity(intent1);
-        }
 
     }
 

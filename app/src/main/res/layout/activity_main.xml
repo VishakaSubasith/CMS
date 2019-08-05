@@ -6,10 +6,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@drawable/backnew"
 
 
-    >
+    tools:context=".MainActivity">
 
     <SearchView
         android:id="@+id/searchView"
@@ -98,14 +98,14 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="@+id/textView15"
         app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="@+id/textView15"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@mipmap/st_person"
-        android:contentDescription="TODO" />
+        app:srcCompat="@mipmap/st_person" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -178,12 +178,12 @@
         app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:backgroundTint="@color/colorPrimaryDark"
         android:id="@+id/floatingActionButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:clickable="true"
         android:onClick="goRegister"
         app:layout_constraintBottom_toBottomOf="parent"

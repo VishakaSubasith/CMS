@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animationCache="false"
-    android:background="#F8FAFC"
+    android:background="@drawable/backnew"
     tools:context=".Classhome">
 
     <TextView
@@ -66,12 +66,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle"
-        android:layout_width="275dp"
-        android:layout_height="429dp"
+        android:layout_width="268dp"
+        android:layout_height="437dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="88dp"
         android:layout_marginBottom="8dp"
-        android:background="#F7FBFC"
+        android:background="@drawable/backnew"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
