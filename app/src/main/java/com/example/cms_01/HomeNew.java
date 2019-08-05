@@ -30,9 +30,9 @@ public class HomeNew extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     ImageView image;
     ImageView image1;
-
     ImageView image2;
-    ImageView image3; //anuj's Link Files
+    ImageView image3;
+                            //anuj's Link Files
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +47,7 @@ public class HomeNew extends AppCompatActivity
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 String theurl = "http://google.com";
