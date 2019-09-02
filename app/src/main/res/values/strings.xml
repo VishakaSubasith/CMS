@@ -118,13 +118,12 @@
     <string name="generate">Generate</string>
     <string name="updateCal">UpdateCal</string>
     <string name="get_date">Get Date</string>
-    <string name="get_date">Get Date</string>
-    <string name="get_date">Get Date</string>
+
     <string name="savebtn">Save</string>
     <string name="login">Login</string>
     <string name="please_sign_up_here">Please Sign up Here</string>
-    <string name="gender">Gender</string>
-    <string name="delete">Delete</string>
+
+
     <string name="update">Update</string>
     <string name="profile">PROFILE</string>
     <string name="class_room">CLASS ROOM</string>

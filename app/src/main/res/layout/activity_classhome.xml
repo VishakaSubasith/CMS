@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animationCache="false"
-    android:background="@drawable/backnew"
     tools:context=".Classhome">
 
     <TextView
@@ -68,7 +67,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="88dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/backnew"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
