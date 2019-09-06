@@ -24,7 +24,6 @@ Button button1;
         setContentView(R.layout.activity_classhome);
          txt=findViewById(R.id.imageView10);
          pgsbar=findViewById(R.id.progressBar);
-         button1=findViewById(R.id.button5);
 
          recy=findViewById(R.id.recycle);
          recy.setHasFixedSize(true);
