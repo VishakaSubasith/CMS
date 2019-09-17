@@ -14,7 +14,7 @@
         tools:context=".TimeTable">
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/btn_sunday"
             android:layout_width="0dp"
             android:layout_height="47dp"
             android:layout_marginTop="8dp"
@@ -22,7 +22,6 @@
             android:background="@color/textbox"
             android:onClick="send1"
             android:shadowColor="#00DA1F1F"
-            android:shadowRadius="@android:integer/config_longAnimTime"
             android:text="@string/sunday"
             android:textSize="35sp"
             android:textStyle="italic"
@@ -127,7 +126,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button12" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_sunday" />
 
         <TextView
             android:id="@+id/textView31"

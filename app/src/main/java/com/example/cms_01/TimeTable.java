@@ -18,7 +18,7 @@ public class TimeTable extends AppCompatActivity {
     }
 
     public void send1(View v1){
-        Intent intent2=new Intent(TimeTable.this,retrivedata.class);
+        Intent intent2=new Intent(TimeTable.this, retrivedata.class);
         startActivity(intent2);
     }
 }

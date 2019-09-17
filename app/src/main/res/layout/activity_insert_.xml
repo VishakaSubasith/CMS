@@ -12,6 +12,21 @@
     tools:context=".Insert_Activity">
 
 
+    <EditText
+        android:id="@+id/subject_edit"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/textbox"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="@+id/batch_edit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView14" />
+
     <TextView
         android:id="@+id/textView20"
         android:layout_width="107dp"
@@ -32,8 +47,8 @@
         android:text="@string/to"
         android:textSize="18sp"
         android:textStyle="italic"
-        app:layout_constraintBaseline_toBaselineOf="@+id/bdaytxt"
-        app:layout_constraintStart_toEndOf="@+id/bdaytxt" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/durationst_edit"
+        app:layout_constraintStart_toEndOf="@+id/durationst_edit" />
 
     <TextView
         android:id="@+id/textView6"
@@ -44,7 +59,7 @@
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
-        app:layout_constraintEnd_toStartOf="@+id/spinner1"
+        app:layout_constraintEnd_toStartOf="@+id/type_spinner"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView8" />
 
@@ -58,7 +73,7 @@
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bdaytxt" />
+        app:layout_constraintTop_toBottomOf="@+id/durationst_edit" />
 
     <TextView
         android:id="@+id/textView7"
@@ -70,26 +85,11 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lname"
+        app:layout_constraintTop_toBottomOf="@+id/date_edit"
         app:layout_constraintVertical_bias="0.034" />
 
     <EditText
-        android:id="@+id/lnametxt"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="8dp"
-        android:background="@color/textbox"
-        android:ems="10"
-
-        android:inputType="text"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView14" />
-
-    <EditText
-        android:id="@+id/fnametxt"
+        android:id="@+id/venue_edit"
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
@@ -104,35 +104,33 @@
         app:layout_constraintStart_toEndOf="@+id/textView18" />
 
     <EditText
-        android:id="@+id/fname"
+        android:id="@+id/batch_edit"
         android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="4dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
         android:background="@color/textbox"
         android:ems="10"
         android:inputType="text"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView19"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toEndOf="@+id/textView19" />
+        app:layout_constraintEnd_toEndOf="@+id/venue_edit" />
 
     <EditText
-        android:id="@+id/lname"
+        android:id="@+id/date_edit"
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
         android:background="@color/textbox"
         android:ems="10"
         android:inputType="text|time"
+        android:onClick="showdate"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView15" />
 
     <EditText
-        android:id="@+id/uname"
+        android:id="@+id/durationto_edit"
         android:layout_width="108dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
@@ -140,13 +138,14 @@
         android:background="@color/textbox"
         android:ems="10"
         android:inputType="datetime"
+        android:onClick="showtime"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.66"
         app:layout_constraintStart_toEndOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/notice_edit"
         android:layout_width="0dp"
         android:layout_height="136dp"
         android:background="@color/textbox"
@@ -159,7 +158,7 @@
 
     <Button
         android:background="@color/colorPrimaryDark"
-        android:id="@+id/registerbtn"
+        android:id="@+id/savebtn"
         android:layout_width="126dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -175,12 +174,13 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="32dp"
         android:background="@color/colorPrimaryDark"
+        android:onClick="send1"
         android:text="@android:string/cancel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+        app:layout_constraintTop_toBottomOf="@+id/notice_edit" />
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/type_spinner"
         android:layout_width="150dp"
         android:layout_height="51dp"
         android:layout_marginStart="8dp"
@@ -196,8 +196,8 @@
         android:id="@+id/textView14"
         android:layout_width="90dp"
         android:layout_height="38dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
         android:text="@string/subject"
         android:textSize="18sp"
         android:textStyle="italic"
@@ -210,12 +210,9 @@
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
         android:text="@string/date"
         android:textSize="18sp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toStartOf="@+id/lnametxt"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -244,27 +241,26 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <EditText
-        android:id="@+id/bdaytxt"
+        android:id="@+id/durationst_edit"
         android:layout_width="79dp"
         android:layout_height="44dp"
         android:background="@color/textbox"
         android:ems="10"
         android:inputType="textPersonName"
+        android:onClick="showtime"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
         app:layout_constraintStart_toEndOf="@+id/textView20" />
 
     <TextView
-        android:textAlignment="center"
         android:id="@+id/textView30"
-        android:layout_width="0dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="140dp"
+        android:layout_width="161dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="84dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:text="@string/insertshedule"
+        android:textAlignment="center"
         android:textColor="#131313"
         android:textSize="28sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -272,11 +268,13 @@
         android:id="@+id/imageView12"
         android:layout_width="91dp"
         android:layout_height="56dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/lnametxt"
-        app:layout_constraintEnd_toEndOf="@+id/lnametxt"
+        app:layout_constraintBottom_toTopOf="@+id/subject_edit"
+        app:layout_constraintEnd_toEndOf="@+id/subject_edit"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_date_range_black_24dp" />
 
