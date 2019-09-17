@@ -30,7 +30,7 @@ public class ExpMng extends AppCompatActivity {
             }
         });
 
-        tvw=(TextView)findViewById(R.id.editText4);
+        tvw=(TextView)findViewById(R.id.lname);
         picker=(DatePicker)findViewById(R.id.datePicker1);
         btnGet=(Button)findViewById(R.id.button1);
         btnGet.setOnClickListener(new View.OnClickListener() {

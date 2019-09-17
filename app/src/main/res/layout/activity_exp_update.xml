@@ -96,7 +96,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/bdaytxt"
         android:layout_width="0dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
@@ -109,7 +109,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/scltxt"
         android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"

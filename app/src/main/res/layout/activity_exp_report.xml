@@ -15,7 +15,7 @@
         tools:context=".ExpReport">
 
         <EditText
-            android:id="@+id/editText9"
+            android:id="@+id/bday"
             android:layout_width="216dp"
             android:layout_height="42dp"
             android:layout_marginStart="8dp"
@@ -31,7 +31,7 @@
 
         <EditText
 
-            android:id="@+id/editText10"
+            android:id="@+id/scl"
             android:layout_width="216dp"
             android:layout_height="41dp"
             android:layout_marginStart="8dp"
@@ -43,7 +43,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/editText9" />
+            app:layout_constraintTop_toTopOf="@+id/bday" />
 
         <TextView
             android:id="@+id/textView9"
@@ -54,13 +54,13 @@
             android:layout_marginBottom="24dp"
             android:text="@string/to"
             android:textSize="28sp"
-            app:layout_constraintBottom_toTopOf="@+id/editText10"
+            app:layout_constraintBottom_toTopOf="@+id/scl"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText9"
+            app:layout_constraintTop_toBottomOf="@+id/bday"
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/totalAmo"
+            android:id="@+id/registerbtn"
             android:layout_width="0dp"
             android:layout_height="52dp"
             android:layout_marginStart="8dp"
@@ -70,7 +70,7 @@
             android:text="@string/generate"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText10" />
+            app:layout_constraintTop_toBottomOf="@+id/scl" />
 
         <TextView
             android:id="@+id/textView13"
@@ -92,8 +92,8 @@
             android:layout_marginEnd="16dp"
             android:text="@string/lable4"
             android:textSize="25sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
-            app:layout_constraintEnd_toStartOf="@+id/editText9"
+            app:layout_constraintBaseline_toBaselineOf="@+id/bday"
+            app:layout_constraintEnd_toStartOf="@+id/bday"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -105,8 +105,8 @@
 
             android:text="@string/lable4"
             android:textSize="25sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText10"
-            app:layout_constraintEnd_toStartOf="@+id/editText10"
+            app:layout_constraintBaseline_toBaselineOf="@+id/scl"
+            app:layout_constraintEnd_toStartOf="@+id/scl"
             app:layout_constraintHorizontal_bias="0.523"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -121,7 +121,7 @@
             android:datePickerMode="spinner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/totalAmo" />
+            app:layout_constraintTop_toBottomOf="@+id/registerbtn" />
 
         <Button
             android:id="@+id/button2"
@@ -131,8 +131,8 @@
             android:layout_marginStart="8dp"
             android:background="@color/colorPrimary"
             android:text="@string/get_date"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText10"
-            app:layout_constraintStart_toEndOf="@+id/editText10" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/scl"
+            app:layout_constraintStart_toEndOf="@+id/scl" />
 
         <Button
             android:id="@+id/button13"
@@ -142,8 +142,8 @@
             android:layout_marginStart="8dp"
             android:background="@color/colorPrimary"
             android:text="@string/get_date"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
-            app:layout_constraintStart_toEndOf="@+id/editText9" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/bday"
+            app:layout_constraintStart_toEndOf="@+id/bday" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

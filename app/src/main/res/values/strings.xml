@@ -71,6 +71,13 @@
         <item>Batch 05</item>
 
     </string-array>
+    <string-array name="gender">
+
+        <item>Male</item>
+        <item>Female</item>
+
+
+    </string-array>
 
 
     <string name="title_activity_retrive_data">retriveData</string>
@@ -130,5 +137,9 @@
     <string name="time_table">TIME TABLE</string>
     <string name="expense">EXPENSE</string>
     <string name="timetable">TimeTable</string>
+    <string name="birth">DD/MM/YYYY</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+
 
 </resources>

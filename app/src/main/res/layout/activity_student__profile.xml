@@ -7,57 +7,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Student_Profile">
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="123dp"
-            android:layout_height="118dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:contentDescription="TODO"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.544"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/photo" />
-
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="116dp"
-            android:layout_height="28dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="44dp"
-            android:text="@string/firstname"
-            android:textSize="18sp"
-            android:textStyle="italic"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
-
-        <EditText
-            android:id="@+id/editText"
+            android:id="@+id/fnametxt"
             android:layout_width="0dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:background="@color/textbox"
-            android:ems="10"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            android:text=""
-            android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorLink="@color/colorPrimaryDark"
-            android:textCursorDrawable="@color/colorPrimaryDark"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+            android:layout_height="42dp"
+            android:layout_marginTop="28dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
@@ -66,16 +31,16 @@
             android:layout_height="28dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
-            android:text="@string/last_name"
+            android:text="@string/mobile"
             android:textSize="18sp"
             android:textStyle="italic"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/fnametxt" />
 
         <EditText
-            android:id="@+id/editText2"
-            android:layout_width="0dp"
-            android:layout_height="44dp"
+            android:id="@+id/lnametxt"
+            android:layout_width="265dp"
+            android:layout_height="45dp"
             android:layout_marginStart="8dp"
 
             android:layout_marginEnd="8dp"
@@ -117,13 +82,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/bdaytxt"
             android:layout_width="0dp"
             android:layout_height="44dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:background="@color/textbox"
             android:ems="10"
+            android:hint="@string/birth"
             android:inputType="date"
             android:textColorHighlight="@color/colorPrimaryDark"
             android:textColorLink="@color/colorPrimaryDark"
@@ -146,7 +112,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/scltxt"
             android:layout_width="0dp"
             android:layout_height="44dp"
             android:layout_marginStart="8dp"
@@ -155,43 +121,13 @@
             android:ems="10"
 
             android:inputType="textPersonName"
-            android:textColor="@color/colorPrimaryDark"
+
             android:textColorHighlight="@color/colorPrimaryDark"
             android:textColorLink="@color/colorPrimaryDark"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView8" />
-
-        <RadioButton
-            android:id="@+id/radioButton"
-
-            android:layout_width="0dp"
-            android:layout_height="31dp"
-            android:layout_marginStart="12dp"
-            android:text="@string/male"
-android:textStyle="italic
-"            android:textColorHighlight="@color/colorPrimary"
-            android:textColorLink="@color/colorPrimary"
-            android:textSize="14sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
-            app:layout_constraintStart_toEndOf="@+id/textView3" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-
-            android:layout_width="87dp"
-            android:layout_height="28dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/female"
-            android:textStyle="italic"
-            android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorLink="@color/colorPrimaryDark"
-            android:textSize="14sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/radioButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/radioButton" />
 
         <TextView
             android:id="@+id/textView9"
@@ -213,27 +149,11 @@ android:textStyle="italic
             android:layout_height="28dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
-            android:text="@string/exams"
             android:textSize="18sp"
             android:textStyle="italic"
             app:layout_constraintBaseline_toBaselineOf="@+id/scrollView2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-        <TextView
-            android:id="@+id/textView11"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/add"
-            android:textStyle="italic"
-            android:textSize="14sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.087"
-            app:layout_constraintStart_toEndOf="@+id/imageButton" />
 
         <Button
             android:id="@+id/OKbtn"
@@ -264,18 +184,8 @@ android:textStyle="italic
             app:layout_constraintHorizontal_bias="0.661"
             app:layout_constraintStart_toEndOf="@+id/OKbtn" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="41dp"
-            android:layout_height="37dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            app:layout_constraintStart_toEndOf="@+id/textView10"
-            app:layout_constraintTop_toBottomOf="@+id/spinner2"
-            app:srcCompat="@android:drawable/ic_input_add" />
-
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/txtbatch"
             android:layout_width="0dp"
             android:layout_height="44dp"
             android:layout_marginStart="8dp"
@@ -285,7 +195,19 @@ android:textStyle="italic
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/editText7" />
+            app:layout_constraintTop_toBottomOf="@+id/scltxt" />
+
+        <Spinner
+            android:id="@+id/gendertxt"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/textbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/lnametxt" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
