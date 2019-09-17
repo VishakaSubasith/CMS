@@ -21,7 +21,7 @@ ProgressBar pg;
 new Timer().schedule(new TimerTask() {
     @Override
     public void run() {
-    startActivity(new Intent(getApplicationContext(),Login.class));
+    startActivity(new Intent(getApplicationContext(), Login.class));
     finish();
     }
 

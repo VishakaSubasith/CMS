@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,13 +34,13 @@ public class Login extends AppCompatActivity {
 
     }
     public void register(View v){
-        Intent aaa = new Intent(Login.this,register.class);
+        Intent aaa = new Intent(Login.this, com.example.cms_01.register.class);
         startActivity(aaa);
     }
     public void validate(String username, String password){
 
-        if((username.equals("admin")) && (password.equals("1234"))){
-            Intent intent = new Intent(Login.this,HomeNew.class);
+        if((username.equals("")) && (password.equals(""))){
+            Intent intent = new Intent(Login.this, HomeNew.class);
             startActivity(intent);
             Toast.makeText(getApplicationContext(),"Login Pass!!",Toast.LENGTH_LONG).show();
         }
