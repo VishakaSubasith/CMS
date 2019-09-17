@@ -54,6 +54,27 @@
             android:text="Amount" />
 
 
+
+
+
     </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:layout_width="475dp"
+        android:layout_height="611dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="84dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ListView
+            android:id="@+id/expTotalView"
+            android:layout_width="546dp"
+            android:layout_height="602dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="120dp" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

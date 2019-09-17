@@ -8,40 +8,21 @@
     android:layout_height="match_parent"
     tools:context=".AddExp">
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="0dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/searchbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-16dp">
 
-        android:id="@+id/textView18"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/textbox"
-        android:paddingTop="25dp"
-        android:text="@string/data_name"
-        android:textSize="35sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        app:layout_constraintVertical_bias="0.002" />
+        <ListView
+            android:id="@+id/expListView"
+            android:layout_width="429dp"
+            android:layout_height="361dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="120dp" />
+    </LinearLayout>
 
     <ImageView
 
@@ -49,7 +30,7 @@
         android:layout_width="73dp"
         android:layout_height="67dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="68dp"
         android:contentDescription="TODO"
         android:foreground="@drawable/ic_control_point_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,12 +41,24 @@
         tools:layout_conversion_wrapHeight="223"
         tools:layout_conversion_wrapWidth="294" />
 
+    <SearchView
+        android:id="@+id/expsearchView"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/searchbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
     <TextView
         android:id="@+id/textView11"
         android:layout_width="0dp"
         android:layout_height="34dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:text="@string/expenses"
         android:textAlignment="center"
@@ -73,29 +66,8 @@
         android:textSize="35dp"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/expUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="41dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="Update"
-        app:layout_constraintBottom_toBottomOf="@+id/textView18"
-        app:layout_constraintEnd_toStartOf="@+id/expDelete"
-        app:layout_constraintTop_toTopOf="@+id/textView18"
-        app:layout_constraintVertical_bias="0.548" />
-
-    <Button
-        android:id="@+id/expDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="Delete"
-        app:layout_constraintBaseline_toBaselineOf="@+id/expUpdate"
-        app:layout_constraintEnd_toEndOf="@+id/textView18" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

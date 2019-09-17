@@ -31,6 +31,12 @@
     <string name="add_expense">Add Expense</string>
     <string name="expenses_report">Expenses Report</string>
     <string name="update_expense">Update Expense</string>
+    <string name="expdelete">Delete</string>
+    <string name="updateExp">UPDATE</string>
+
+
+
+
     <string name="repdettit">Total Amount</string>
     <string name="repdet1">0.00</string>
     <string name="repdet2">120.00</string>
@@ -39,7 +45,6 @@
 
 
     <string name="save">SAVE</string>
-    <string name="updateExp">UPDATE</string>
     <string name="textView7">Class Name</string>
     <string name="sub">Subject</string>
     <string name="delete">Delete</string>
@@ -129,6 +134,7 @@
     <string name="savebtn">Save</string>
     <string name="login">Login</string>
     <string name="please_sign_up_here">Please Sign up Here</string>
+    <string name="Expsave">Save</string>
 
 
     <string name="update">Update</string>

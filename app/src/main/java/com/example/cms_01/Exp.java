@@ -37,13 +37,13 @@ public class Exp extends AppCompatActivity {
 
     }
 public void openAct2(){
-    Intent intent = new Intent(this,AddExp.class);
+    Intent intent = new Intent(this, AddExp.class);
     startActivity(intent);
 
 }
 
 public void openAct3(){
-    Intent intent2 = new Intent(this,ExpReport.class);
+    Intent intent2 = new Intent(this, ExpReport.class);
     startActivity(intent2);
 
 }

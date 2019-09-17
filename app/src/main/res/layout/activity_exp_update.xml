@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent" android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android" >
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ExpUpdate">
@@ -14,24 +12,22 @@
         android:id="@+id/datePicker1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:calendarViewShown="false"
         android:datePickerMode="spinner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Update"
-        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+        app:layout_constraintTop_toBottomOf="@+id/exptudate" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/expgetdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/datePicker1"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
         android:text="@string/get_date"
-        app:layout_constraintBottom_toTopOf="@+id/Update"
+        app:layout_constraintBottom_toTopOf="@+id/exptupdate2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -84,7 +80,7 @@
 
     <EditText
         android:background="@color/textbox"
-        android:id="@+id/uname"
+        android:id="@+id/exptuname"
         android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginStart="8dp"
@@ -96,7 +92,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/bdaytxt"
+        android:id="@+id/exptucat"
         android:layout_width="0dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
@@ -109,7 +105,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/scltxt"
+        android:id="@+id/exptuamount"
         android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
@@ -122,7 +118,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView7" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/exptudate"
         android:layout_width="0dp"
         android:layout_height="37dp"
         android:layout_marginStart="8dp"
@@ -135,12 +131,23 @@
         app:layout_constraintStart_toEndOf="@+id/textView8" />
 
     <Button
-        android:id="@+id/Update"
+        android:id="@+id/exptdelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="508dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/expdelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exptupdate2" />
+
+    <Button
+        android:id="@+id/exptupdate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="468dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/updateExp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -167,6 +174,7 @@
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

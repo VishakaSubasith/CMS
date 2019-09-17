@@ -25,7 +25,7 @@ public class ExpReport extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exp_report);
 
-        but1 = (Button) findViewById(R.id.registerbtn);
+        but1 = (Button) findViewById(R.id.totalAmo);
 
         // Capture button clicks
         but1.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +35,7 @@ public class ExpReport extends AppCompatActivity {
             }
         });
 
-        tvw=(TextView)findViewById(R.id.bday);
+        tvw=(TextView)findViewById(R.id.editText9);
 
         picker=(DatePicker)findViewById(R.id.datePicker4);
         btnGet=(Button)findViewById(R.id.button13);
@@ -46,7 +46,7 @@ public class ExpReport extends AppCompatActivity {
             }
         });
 
-        tvw1=(TextView)findViewById(R.id.scl);
+        tvw1=(TextView)findViewById(R.id.editText10);
 
         picker=(DatePicker)findViewById(R.id.datePicker4);
         btnGet1=(Button)findViewById(R.id.button2);
@@ -61,7 +61,7 @@ public class ExpReport extends AppCompatActivity {
     }
 
     public void OpenTotal(){
-        Intent intent = new Intent(this,ExpReportTot.class);
+        Intent intent = new Intent(this, ExpReportTot.class);
         startActivity(intent);
 
 
