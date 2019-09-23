@@ -63,7 +63,7 @@ public class Insert_Activity extends AppCompatActivity {
         editnotice=findViewById(R.id.notice_edit);
         edittype=findViewById(R.id.type_spinner);
 
-        editdate.setText("Selected Date: "+ Calendar.YEAR+"/"+ (Calendar.MONTH + 1)+"/"+Calendar.DAY_OF_MONTH);
+       // editdate.setText("Selected Date: "+ Calendar.YEAR+"/"+ (Calendar.MONTH + 1)+"/"+Calendar.DAY_OF_MONTH);
         save=findViewById(R.id.savebtn);
 
 
@@ -137,13 +137,29 @@ public class Insert_Activity extends AppCompatActivity {
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 
                 editdurationst.setText(hourOfDay+":"+minute);
-                editdurationto.setText(hourOfDay+":"+minute);
+               // editdurationto.setText(hourOfDay+":"+minute);
 
             }
 
 
         };
 
+    public void showtime1(View view){
+        TimePickerDialog tpd=new TimePickerDialog(this,timeListener1,hour,minute,true);
+        tpd.show();
+    }
+    private TimePickerDialog.OnTimeSetListener timeListener1=new TimePickerDialog.OnTimeSetListener() {
+        @Override
+        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+
+
+            //editdurationst.setText(hourOfDay+":"+minute);
+            editdurationto.setText(hourOfDay+":"+minute);
+
+        }
+
+
+    };
 
 
 
