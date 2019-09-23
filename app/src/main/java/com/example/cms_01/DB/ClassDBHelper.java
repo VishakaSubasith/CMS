@@ -35,15 +35,11 @@ public class ClassDBHelper extends SQLiteOpenHelper {
                 COLUMN_NAME_DAY_ +" TEXT)";
 
        sqLiteDatabase.execSQL(SQL_CREATE_ENTRIES);
-
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
-
-
     public boolean addclass(String name, String subject, String year, String location, String day){
 
         SQLiteDatabase db= getWritableDatabase();
@@ -54,7 +50,6 @@ public class ClassDBHelper extends SQLiteOpenHelper {
         values.put(COLUMN_NAME_YEAR_, year);
         values.put(COLUMN_NAME_LOCATION_, location);
         values.put(COLUMN_NAME_DAY_, day);
-
         long newrowID = db.insert(TABLE_NAME,null,values);
         if (newrowID == -1) {
             return false;
@@ -68,7 +63,6 @@ public Cursor viewdata(){
     Cursor cur =db.rawQuery(query,null);
     return cur;
 }
-
 public Cursor getItemID(String classname, String sub, String year,String locate) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT " + _ID + " FROM " + TABLE_NAME +

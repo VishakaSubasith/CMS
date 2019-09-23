@@ -60,7 +60,7 @@ public class register_students extends AppCompatActivity {
             db=new StudentDBHandler(context);
             sqLiteDatabase=db.getWritableDatabase();
 
-        if(fname.length() != 0 && lname.length() != 0 && gendermale.length()!= 0 && genderfemale.length()!= 0 && bday.length()!= 0 && scl.length()!= 0 &&  bday.getText().toString().matches(NumberPattern)){
+        if(fname.length() != 0 && lname.length() != 0 && gendermale.length()!= 0 && genderfemale.length()!= 0 && bday.length()!= 0 && scl.length()!= 0 &&  lname.getText().toString().matches(NumberPattern)){
 
 
             if (Male == "male" || Male == "Male") {
