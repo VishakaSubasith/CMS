@@ -7,9 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ExpReport">
@@ -23,11 +21,14 @@
 
             android:layout_marginEnd="8dp"
             android:background="@color/textbox"
-            android:ems="10"
-            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:ems="10"
+            android:inputType="text|time"
+            android:onClick="showdate"
+
+            />
 
         <EditText
 
@@ -39,11 +40,14 @@
             android:layout_marginEnd="8dp"
             android:background="@color/textbox"
             android:ems="10"
-            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/editText9" />
+            app:layout_constraintTop_toTopOf="@+id/editText9"
+            android:inputType="text|time"
+            android:onClick="showdate1"
+
+            />
 
         <TextView
             android:id="@+id/textView9"
@@ -110,24 +114,10 @@
             app:layout_constraintHorizontal_bias="0.523"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <DatePicker
-            android:id="@+id/datePicker4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="8dp"
-            android:calendarViewShown="false"
-            android:datePickerMode="spinner"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/totalAmo" />
-
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/datePicker1"
             android:layout_marginStart="8dp"
             android:background="@color/colorPrimary"
             android:text="@string/get_date"
@@ -138,12 +128,12 @@
             android:id="@+id/button13"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_below="@+id/datePicker1"
             android:layout_marginStart="8dp"
             android:background="@color/colorPrimary"
             android:text="@string/get_date"
             app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
             app:layout_constraintStart_toEndOf="@+id/editText9" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

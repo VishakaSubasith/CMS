@@ -104,4 +104,12 @@ public class ExpenseDBHelper extends SQLiteOpenHelper{
 
     }
 
+    public Cursor getDateExp(String s1, String s2){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor data =  db.rawQuery("SELECT * FROM " + TableName + " WHERE " +EXPCOL05 + " BETWEEN '" + s1 + "' AND '" + s2 + "'",null);
+
+        return data;
+
+    }
+
 }

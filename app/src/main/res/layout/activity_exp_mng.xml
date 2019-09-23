@@ -108,20 +108,26 @@
         android:layout_height="37dp"
         android:background="@color/textbox"
         android:ems="10"
-        android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView4" />
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        android:inputType="text|time"
+        android:onClick="showdate"
+
+
+        />
 
     <Button
         android:id="@+id/exptsave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="464dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="416dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/Expsave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -204,30 +210,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" />
-
-    <DatePicker
-        android:id="@+id/datePicker1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="8dp"
-        android:calendarViewShown="false"
-        android:datePickerMode="spinner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/exptsave"
-        app:layout_constraintTop_toBottomOf="@+id/exptdate" />
-
-    <Button
-        android:id="@+id/expgetdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/datePicker1"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimary"
-        android:text="Get Date"
-        app:layout_constraintBottom_toTopOf="@+id/exptsave"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

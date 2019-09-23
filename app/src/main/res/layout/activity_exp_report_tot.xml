@@ -60,20 +60,20 @@
     </com.google.android.material.tabs.TabLayout>
 
     <LinearLayout
-        android:layout_width="475dp"
-        android:layout_height="611dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="84dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-16dp">
 
         <ListView
             android:id="@+id/expTotalView"
-            android:layout_width="546dp"
-            android:layout_height="602dp"
-            android:layout_marginTop="88dp"
-            android:layout_marginEnd="120dp" />
+            android:layout_width="341dp"
+            android:layout_height="359dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="120dp"
+            android:baselineAligned="false" />
+
     </LinearLayout>
 
 
