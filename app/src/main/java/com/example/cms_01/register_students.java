@@ -47,6 +47,7 @@ public class register_students extends AppCompatActivity {
 
     }
     public void AddStudent(View view){
+        String NumberPattern = "[1-9][0-9]*|0";
 
             String Fname= fname.getText().toString();
             String Lname=lname.getText().toString();
@@ -59,7 +60,7 @@ public class register_students extends AppCompatActivity {
             db=new StudentDBHandler(context);
             sqLiteDatabase=db.getWritableDatabase();
 
-        if(fname.length() != 0 && lname.length() != 0 && gendermale.length()!= 0 && genderfemale.length()!= 0 && bday.length()!= 0 && scl.length()!= 0) {
+        if(fname.length() != 0 && lname.length() != 0 && gendermale.length()!= 0 && genderfemale.length()!= 0 && bday.length()!= 0 && scl.length()!= 0 &&  bday.getText().toString().matches(NumberPattern)){
 
 
             if (Male == "male" || Male == "Male") {

@@ -69,11 +69,10 @@
 
     <string-array name="Batches">
 
-        <item>Batch 01</item>
-        <item>Batch 02</item>
-        <item>Batch 03</item>
-        <item>Batch 04</item>
-        <item>Batch 05</item>
+        <item>A/L</item>
+        <item>O/L</item>
+        <item>Other</item>
+
 
     </string-array>
     <string-array name="gender">

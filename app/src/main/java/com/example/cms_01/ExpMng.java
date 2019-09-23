@@ -52,13 +52,16 @@ public class ExpMng extends AppCompatActivity {
     public void addData(){
         expSave.setOnClickListener(
                 new View.OnClickListener(){
+                    String NumberPattern = "[1-9][0-9]*|0";
 
                     public void onClick(View view){
                         boolean expInserted = expdb.insertExpData(expname.getText().toString(),
                                 expcate.getText().toString(),
                                 expamount.getText().toString(),
                                 expdate.getText().toString());
-                        if(expname.length() != 0 && expcate.length() != 0 && expamount.length()!= 0 && expdate.length()!= 0) {
+                        if(expname.length() != 0 && expcate.length() != 0 && expamount.length()!= 0 && expdate.length()!= 0  && expamount.getText().toString().matches(NumberPattern)) {
+
+
 
                             if (expInserted == true) {
                                 Toast.makeText(ExpMng.this, "Data inserted", Toast.LENGTH_LONG).show();
