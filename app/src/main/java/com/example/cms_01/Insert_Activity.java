@@ -152,17 +152,23 @@ public class Insert_Activity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        boolean inserted = mydb.insertdata(editsubject.getText().toString(), editbatch.getText().toString(), editvenue.getText().toString(), editdate.getText().toString(), editdurationst.getText().toString(), editdurationto.getText().toString(), edittype.getAdapter().toString(), editnotice.getText().toString());
 
-                        if (inserted == true) {
-                            Toast.makeText(Insert_Activity.this, "data inserted", Toast.LENGTH_LONG).show();
+                        if(editsubject.length() != 0 && editbatch.length() != 0 && editvenue.length()!= 0 && editdate.length()!= 0 &&  editdurationst.length()!= 0  &&  editnotice.length()!= 0) {
 
-                            Intent intent2 = new Intent(Insert_Activity.this, retrivedata.class);
-                            startActivity(intent2);
 
+                            boolean inserted = mydb.insertdata(editsubject.getText().toString(), editbatch.getText().toString(), editvenue.getText().toString(), editdate.getText().toString(), editdurationst.getText().toString(), editdurationto.getText().toString(), edittype.getAdapter().toString(), editnotice.getText().toString());
+
+                            if (inserted == true) {
+                                Toast.makeText(Insert_Activity.this, "data inserted", Toast.LENGTH_LONG).show();
+
+                                Intent intent2 = new Intent(Insert_Activity.this, retrivedata.class);
+                                startActivity(intent2);
+
+                            }
                         }
-                        else
+                        else{
                             Toast.makeText(Insert_Activity.this, "data not inserted", Toast.LENGTH_LONG).show();
+                        }
 
                     }
 

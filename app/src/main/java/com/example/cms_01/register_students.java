@@ -45,12 +45,6 @@ public class register_students extends AppCompatActivity {
        scl=(EditText)findViewById(R.id.scl);
 
 
-
-
-
-
-
-
     }
     public void AddStudent(View view){
 
@@ -64,18 +58,28 @@ public class register_students extends AppCompatActivity {
 
             db=new StudentDBHandler(context);
             sqLiteDatabase=db.getWritableDatabase();
-            if(Male=="male"|| Male== "Male"){
-                db.addStudent(Fname,Lname,Male,Bday,Batch,Scl);
-                Toast.makeText(getApplicationContext(),"1 Student added",Toast.LENGTH_LONG).show();
-                Intent intent =new Intent(register_students.this,MainActivity.class);
+
+        if(fname.length() != 0 && lname.length() != 0 && gendermale.length()!= 0 && genderfemale.length()!= 0 && bday.length()!= 0 && scl.length()!= 0) {
+
+
+            if (Male == "male" || Male == "Male") {
+
+
+                db.addStudent(Fname, Lname, Male, Bday, Batch, Scl);
+                Toast.makeText(getApplicationContext(), "1 Student added", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(register_students.this, MainActivity.class);
                 startActivity(intent);
-            }else{
-                db.addStudent(Fname,Lname,Female,Bday,Batch,Scl);
-                Toast.makeText(getApplicationContext(),"1 Student added",Toast.LENGTH_LONG).show();
-                Intent intent =new Intent(register_students.this,MainActivity.class);
+            } else {
+                db.addStudent(Fname, Lname, Female, Bday, Batch, Scl);
+                Toast.makeText(getApplicationContext(), "1 Student added", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(register_students.this, MainActivity.class);
                 startActivity(intent);
             }
+        }else{
+            Toast.makeText(getApplicationContext(), "Please enter all details!", Toast.LENGTH_LONG).show();
 
+
+        }
             db.close();
 
 

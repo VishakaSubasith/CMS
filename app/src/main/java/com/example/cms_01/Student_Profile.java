@@ -108,15 +108,18 @@ public class Student_Profile extends AppCompatActivity {
                 String Scl=scl.getText().toString();
                 String Batch= batch.getSelectedItem().toString();
 
+                if(fname.length() != 0 && lname.length() != 0 && bday.length()!= 0 && scl.length()!= 0) {
 
                 db.UpdateStudent(Firstname,lastname,Gender,birthday,Batch,Scl);
                 Toast.makeText(getApplicationContext(),Firstname+" Updated successfull",Toast.LENGTH_LONG).show();
                 finish();
 
 
-
-
                 //OpenOk();
+            }else{
+                    Toast.makeText(getApplicationContext(),"Please Enter All details!",Toast.LENGTH_LONG).show();
+
+                }
             }
 
 
